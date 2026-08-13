@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css.css">
+
+</head>
+
+<body>
+
+    <h1>Survey Form</h1>
+
+    <div class="container">
+        <p>Let us know how we can improve free CodeCamp</p>
+
+        <form method="get">
+
+            <div class="item">
+                <label for="Name" class="left">* Name :</label>
+                <input type="text" for="Name" placeholder="Enter Your name" class="right">
+            </div>
+
+            <div class="item">
+                <label for="email" class="left">* E-mail :</label>
+                <input type="email" for="email" placeholder="Enter Your email" class="right">
+            </div>
+
+            <div class="item">
+                <label for="Age" class="left">* Age :</label>
+                <input type="number" for="Age" placeholder="Enter Your age" class="right">
+            </div>
+
+            <div class="item">
+                <label for="Role" class="left">Which option best discribes your current role?</label>
+                <div class="select right ">
+                    <select name="role" id="Role">
+                        <option selected disabled hidden>Plz choose a role</option>
+                        <option value="">Student</option>
+                        <option value="">Mentor</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="item">
+                <p>* How likely is that you would recommend free CodeCamp to a friend ?</p>
+
+                <div class="options">
+                    <input type="radio" name="option" id="Def">
+                    <label for="Def">Definitely</label>
+
+                    <input type="radio" name="option" id="May">
+                    <label for="May">Maybe</label>
+
+                    <input type="radio" name="option" id="NS">
+                    <label for="NS">Not Sure</label>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

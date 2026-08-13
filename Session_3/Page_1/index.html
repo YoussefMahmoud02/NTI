@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe_01</title>
+
+    <style>
+        .half-width {
+            width: 50%;
+            float: left;
+        }
+
+        .full-width {
+            width: 100%;
+            /* float: left; */
+        }
+
+        .w90 {
+            width: 90%;
+        }
+
+        .d-inline-block {
+            display: inline-block;
+        }
+
+        body {
+            background: #E6EEF8;
+        }
+
+        .card {
+            width: 500px;
+            /* height: 600px; */
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+            margin: 50px auto;
+            /* padding: 20px; */
+            /* border-radius: 10px; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #fff;
+            /* width: 100%; */
+            text-align: center;
+            background-color: #135C8A;
+            padding: 10px 0px;
+        }
+
+        form {
+            margin: auto;
+            /* width: 100%; */
+            /* padding: 20px; */
+            /* overflow: auto; */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h2 class="full-width">Registration Form</h2>
+
+        <form method="get" class="w90">
+
+            <div class="first-name half-width d-inline-block">
+                <label for="F-Name">First Name</label>
+                <input type="text" id="F-Name" name="F-Name" class="w90" >
+            </div>
+
+            <div class="last-name half-width d-inline-block">
+                <label for="L-Name">Last Name</label>
+                <input type="text" id="L-Name" name="L-Name" class="w90" >
+            </div>
+
+            <br><br>
+
+            <label for="E-mail" class="full-width">Email</label> <br>
+            <input type="email" id="E-mail" name="E-mail" class="full-width" >
+            <br><br>
+
+            <label for="P-Num" class="full-width">Phone Number</label> <br>
+            <input type="text" id="P-Num" name="P-Num" class="full-width">
+            <br><br>
+
+            <div class="city half-width d-inline-block">
+                <label for="City">City</label> <br>
+                <select name="City" id="City" class="w90" >
+                    <option selected disabled hidden></option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Giza">Giza</option>
+                    <option value="NY">New York</option>
+                    <option value="LA">Los Angeles</option>
+                    <option value="CH">Chicago</option>
+                    <option value="LD">London</option>
+                    <option value="RO">Rome</option>
+                </select>
+            </div>
+
+            <div class="country half-width d-inline-block">
+                <label for="Country">Country</label> <br>
+                <select name="Country" id="Country" class="w90" >
+                    <option selected disabled hidden></option>
+                    <option value="Eg">Egypt</option>
+                    <option value="USA">America</option>
+                    <option value="I">Italy</option>
+                    <option value="F">France</option>
+                    <option value="En">England</option>
+                    <option value="Mi">Milano</option>
+                </select>
+            </div>
+
+            <br><br>
+
+            <button type="submit">Get Started</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
