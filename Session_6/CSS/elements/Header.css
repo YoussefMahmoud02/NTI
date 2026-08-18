@@ -1,0 +1,991 @@
+header
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* ======================NAV====================== */
+
+header nav
+{
+    width: 90%;
+    height:     10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo ,
+header nav .help
+{
+    width: 25%;
+}
+
+header nav .links
+{
+    width: 50%;
+}
+
+header nav .logo 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem ;
+}
+
+header nav .logo i
+{
+    font-size: 1.75rem;
+    margin-right: 1%;
+}
+
+header nav .links ul 
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav .links ul li.active
+{
+    font-weight: bold;
+}
+
+header nav .links ul li a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+header nav .help
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .help .icon
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 2%;
+    background-color: var(--main-color) ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================Home====================== */
+
+header #Home
+{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: var(--main-color);
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+    position: relative;
+
+    font-family: "Work Sans", "sans-serif";
+}
+
+header #Home .drift
+{
+    width: 100%;
+
+    position: absolute;
+    top: -5% ;
+    left: -5% ;
+    /* transform: translateX(60px); */
+    /* overflow: hidden; */
+}
+
+header #Home .car
+{
+    width: 40%;
+
+    position: absolute;
+    bottom: -10%;
+    left: 40%;
+}
+
+header #Home .content
+{
+    width: 60%;
+    padding: 1% 2%;
+    color: #fff;
+    z-index: 5;    
+}
+
+header #Home .content h1
+{
+    font-size: 3rem;
+    /* margin-bottom: 2%; */
+}
+
+header #Home .content p
+{
+    font-size: 1rem;
+    margin: 4% 0;
+    color: #adadad ;
+} 
+
+header #Home .content button
+{
+    color: #fff;
+    padding: 2% 3%;
+    border: none;
+    border-radius: 10px;
+    /* background-color: var(--main-color); */
+    background-color: var(--second-color);
+
+    cursor: pointer;
+}
+
+header #Home form
+{
+    width: 35%;
+    height: 90%;
+    margin: auto;
+    padding: 2% 3%;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+
+    z-index: 5;    
+    /* background: violet; */
+    background-color: #fff;
+}
+
+header #Home form h2
+{
+    /* color: #fff; */
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+header #Home form .inputs
+{
+    margin: auto;
+}
+
+header #Home form .inputs select ,
+header #Home form .inputs input
+{
+    width: 100%;
+    /* width: 90%; */
+    padding: 2% 3%;
+    border: none;
+    border-radius: 5px;
+    margin: 3% 0;
+
+    background-color: #adadad;
+
+    /* appearance: none ; */
+}
+
+header #Home form button
+{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 3% 3%;
+    margin: auto ;   
+    color: #fff;
+    background-color: var(--second-color);
+
+}
+
+/* =====================Features======================= */
+
+.features
+{
+    width: 100%;
+    margin: 3% 0;
+}
+
+.features .container
+{
+    width: 80%;
+    margin: auto;
+    padding: 2% ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.features .container .item
+{
+    width: 30%;
+    padding: 1%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+.features .container .item i
+{
+    font-size: 2rem;
+    margin-bottom: 3%;
+}
+
+.features .container .item h4
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 3% 0;
+}
+
+.features .container .item p
+{
+    font-size: 0.8rem;
+    font-weight: 400;
+    word-spacing: 2px;
+    line-height: 1.2;
+    margin-top: 10% ;
+}
+
+/* =====================Steps======================= */
+
+.steps
+{
+    width: 100%;
+    margin: 3% 0;
+}
+
+.steps .container
+{
+    width: 80%;
+    margin: auto;
+    padding: 0 3% ;
+    /* border-radius: 20px; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* background-color: var(--second-color); */
+}
+
+.steps .container .image
+{
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 3%;
+}
+
+.steps .container .image img
+{
+    max-width: 100%;
+    background-size: cover;
+}
+
+.steps .container .instructions
+{
+    width: 50%;
+    /* padding: 3%; */
+    margin-left: 3%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.steps .container .instructions .rule
+{
+    width: 100%;
+    margin: 3% 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 2%;
+    row-gap: 10px ;
+    /* row-gap: 4%; */
+}
+
+.steps .container .instructions .rule span
+{
+    width: 20px;
+    height: 20px;
+    padding: 2%;
+    border-radius: 50%;
+
+    font-size: 0.7rem;
+    color: #fff;
+    background-color: var(--main-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.steps .container .instructions .rule p
+{
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #adadad;
+}
+
+/* =====================Choice======================= */
+
+.choice
+{
+    width: 100%;
+    margin: 3% 0;
+}
+
+.choice .container
+{
+    width: 90%;
+    margin: auto;
+    /* padding: 2% 3% ; */
+    /* border-radius: 20px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+
+    /* background-color: var(--second-color); */
+}
+
+.choice .container .title
+{
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* .choice .container .title::after
+{
+    content: "Joe";
+    width: 100%;
+    background: var(--main-color) ;
+} */
+
+.choice .container .title h2
+{
+    width: 25%;
+    font-size: 2.5rem;
+}
+
+.choice .container .title a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.choice .container .box
+{
+    width: 100%;
+    margin: 2% 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choice .container .box .card
+{
+    width: 30% ;
+    padding: 2%;
+    border-radius: 20px;
+    margin-bottom: 2%;
+
+    /* background-color: var(--main-color); */
+    background-color: #adadad;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.choice .container .box .card .image ,
+.choice .container .box .card .details ,
+.choice .container .box .card ul ,
+.choice .container .box .card button 
+{
+    width: 100%;
+    margin: 3% 0;
+}
+
+.choice .container .box .card .image img
+{
+    width: 100%;
+}
+
+.choice .container .box .card .details 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice .container .box .card .details .price
+{   
+    text-align: end;
+    color: var(--main-color);
+}
+
+.choice .container .box .card .details h4
+{
+    font-size: 1.5rem;
+}
+
+.choice .container .box .card .details p
+{
+    font-size: 0.9rem;
+    color: var( --sub-t-color);
+    /* color: yellowgreen; */
+}
+
+.choice .container .box .card ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choice .container .box .card ul li 
+{
+    width: 32%;
+    /* background-color: tan; */
+}
+
+.choice .container .box .card ul li p
+{
+    /* width: 100%; */
+    font-size: 0.9rem;
+    color: var(--sub-t-color);
+    /* color:  violet ; */
+}
+
+.choice .container .box .card ul li:last-child p
+{
+    /* background-color: #fff; */
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    column-gap: 2px;
+}
+
+
+.choice .container .box .card ul li i
+{
+    font-size: 1rem;
+    color: #000;
+}
+
+.choice .container .box .card button
+{
+    padding: 3% 2%;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* =====================Facts======================= */
+
+.facts
+{
+    width: 100%;
+    margin: 3% 0;
+    /* background-color: var(--main-color); */
+    /* opacity: 0.5; */
+
+}
+
+.facts .container 
+{
+    background-color: var(--main-color);
+
+    width: 90%;
+    margin: auto;
+    padding: 2%  ;
+    border-radius: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.facts .container .drift_facts
+{
+    width: 70%;
+
+    position: absolute;
+    top: -35px;
+    left: 0;
+}
+
+.facts .container .car_facts 
+{
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    bottom: 0px;
+
+}   
+
+.facts .container .layout
+{
+
+    /* background-color: var(--main-color); */
+    /* opacity: 0.7; */
+    width: 100%;    
+    padding: 2%;
+    z-index: 100;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+
+    text-align: center;
+    color: #fff;
+
+}
+
+.facts .container .layout h2
+{
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
+.facts .container .layout p
+{
+    font-size: 0.8rem;
+    color: #adadad;
+
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+
+}
+
+.facts .container .layout .row
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: start; */
+    align-items: center;
+    margin: 7% 0;
+
+    /* background-color: orangered;  */
+    /* padding: 2%;  */
+}
+
+.facts .container .layout .row .item
+{
+    color: #000;
+    background: #fff;
+    width: 20%;
+    padding: 1%;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.facts .container .layout .row .item .icon
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--second-color);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.7rem;
+    margin-right: 5%;
+}
+
+.facts .container .layout .row .item .content h5
+{
+    font-size: 1rem;
+    text-align: start;
+    margin-bottom: 1%;
+}
+
+.facts .container .layout .row .item .content p
+{
+    /* text-align: start; */
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+/* =====================download======================= */
+
+.download
+{
+    width: 100%;
+    margin: 3% 0;
+    /* background-color: var(--main-color); */
+    /* opacity: 0.5; */
+
+}
+
+.download .container 
+{
+    /* background-color: var(--main-color); */
+
+    width: 90%;
+    margin: auto;
+    padding: 2%  ;
+    /* border-radius: 20px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /* position: relative; */
+    /* overflow: hidden;         */
+}
+
+.download .container .content
+{
+    width: 40%;
+    padding: 3%;
+}
+
+.download .container .content h2
+{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+}
+
+.download .container .content p
+{
+    font-size: 0.9rem;
+    line-height: 1.3;
+    word-spacing: 2px;
+    margin: 10% 0;
+}
+
+.download .container .content .apps
+{
+    width: 80%;
+    margin: 10% 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.download .container .content .apps img
+{
+    width: 45%;
+}
+
+
+.download .container .image
+{
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.download .container .image img
+{
+    width: 40%;
+}
+
+.download .container .image .top
+{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* =====================city======================= */
+
+.city
+{
+    width: 100%;
+    margin: 3% 0;
+    margin-top: 5%;
+
+}
+
+.city .container 
+{
+    background-color: var(--main-color);
+
+    width: 90%;
+    margin: auto;
+    /* padding: 2%  ; */
+    border-radius: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;        
+}
+
+.city .container .dc
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+
+.city .container .content
+{
+    width: 60%;
+    padding: 2%;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+    color: #fff;
+}
+
+.city .container .image
+{
+    width: 30%;
+    padding: 2%;
+    /* z-index: 1000; */
+}
+
+.city .container .image img
+{
+    width: 100%;
+}
+
+.city .container .content h2
+{
+    width: 90%;
+    font-size: 3rem;
+    word-spacing: 2px;
+    /* margin: 5% 0; */
+}
+
+.city .container .content p
+{
+    width: 70%;
+    font-size: 0.8rem;
+    word-spacing: 2px;
+    margin: 5% 0;
+
+}
+
+.city .container .content search
+{
+    width: 50%;
+    padding: 1%;
+    background-color: #fff;
+    color: #adadad;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city .container .content search button
+{
+    border: none;
+    border-radius: 5px;
+    padding: 2% 4%;
+    background-color: var(--second-color);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* =====================Footer======================= */
+
+footer
+{
+    width: 100%;
+    margin: 3% 0;
+    margin-top: 5%;
+
+}
+
+footer .container 
+{
+    /* background-color: var(--main-color); */
+
+    width: 90%;
+    margin: auto;
+    /* padding: 2%  ; */
+    /* border-radius: 20px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /* position: relative; */
+    /* overflow: hidden;         */
+}
+
+footer .container .content ,
+footer .container .head
+{
+    width: 100%;
+    margin: 2% 0;
+
+    /* background-color: yellowgreen; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+footer .container .head
+{
+    align-items: center;
+
+}
+
+footer .container .head .logo ,
+footer .container .head .item
+{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .container .head .logo
+{
+    /* w25% */
+    font-size: 1.3rem ;
+    justify-content: start;
+    /* align-items: start; */
+}
+
+footer .container .head .item .icon
+{
+    width: 30px;
+    height: 30px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 3%;
+}
+
+footer .container .head .item .contact p
+{
+    font-size: 0.9rem;
+}
+
+footer .container .head .item:last-child
+{
+    justify-content: end;
+}
+
+footer .container .content .column
+{
+    width: 25%;
+
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* text-align: start; */
+}
+
+
+footer .container .content .column h5
+{
+    font-size: 1.1rem;
+}
+
+
+
+
+footer .container .content .column ul 
+{
+    list-style: none;
+    margin: 2% 0 ;
+}
+
+
+footer .container .content .column:last-child img
+{
+    margin: 2% 0;
+}
+
+.copyright
+{
+    margin-top: 10%;
+    text-align: center;
+    width: 60%;
+    font-size: 0.6rem;
+    color: #adadad;
+}
+
