@@ -1,0 +1,112 @@
+
+:root
+{
+    --brand-color : #ffb08f; 
+}
+
+/* ================================================================ */
+
+nav
+{
+    overflow: auto;
+    height: 7vh;
+}
+
+nav .logo a
+{
+    display: inline-block;
+    text-indent: -9999px;
+    height: 20px;
+    width: 152px;
+    background-size: 152px 18px;
+    background-image: url("../Images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav .logo button:hover
+{
+    border-color: transparent ;
+    background-color: rgb(20, 69, 41);
+}
+
+/* ================================================================ */
+
+.sign_in ,.details
+{
+    height: 93vh;
+    position: relative;
+}
+
+.sign_in img
+{
+    width: 85px;
+    height: 40px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.sign_in .type .choice .card h5
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.sign_in .type .choice .card p
+{
+    font-size: 0.75rem;
+}
+
+.sign_in .type .choice button
+{
+    width: 100%;
+    transition-duration: 0.5s ;
+}
+
+.sign_in .type .choice .btn:nth-of-type(1) button
+{
+    border: 1px solid #ffd0bb ;
+    background-color: #fcede6 ;
+}
+
+.sign_in .type .choice .btn:nth-of-type(1) button:hover
+{
+    transform: translateY(-12px);
+    box-shadow: 0px 0px 10px #ff8f5e ;
+    background-color: rgb(255, 245, 240);
+    border-color: #ff8f5e;
+}
+
+.sign_in .type .choice .btn:nth-of-type(2) button
+{
+    /* border: 1px solid #ffd0bb ; */
+    /* background-color: #fcede6 ; */
+}
+
+.sign_in .type .choice .btn:nth-of-type(2) button:hover
+{
+    transform: translateY(-12px);
+    box-shadow: 0px 0px 10px #0f172b ;
+    /* background-color: #767d90; */
+    border-color: rgb(163, 163, 163);
+}
+
+/* .sign_in .type .choice button:nth-of-type(2) */
+
+
+ 
+.details
+{
+    background-color: #0f172b ;
+}
+
+
+
+
+
+
+
+
+
+
+
